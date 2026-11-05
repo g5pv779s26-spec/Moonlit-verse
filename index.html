@@ -29,4 +29,6 @@ function savePoem(){let title=document.getElementById('pt').value.trim(),body=do
 function savePost(){let t=document.getElementById('post').value.trim();if(!t)return;let a=JSON.parse(localStorage.getItem('mvposts')||'[]');a.unshift(t);localStorage.setItem('mvposts',JSON.stringify(a));document.getElementById('posts').innerHTML=a.map(x=>`<article class="panel">${esc(x)}</article>`).join('')}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 render();
+const SUPABASE_URL = https://vinfygloichgtkbcppwk.supabase.co/rest/v1/;
+  const SUPABASE_KEY = sb_publishable_SS-UqQajF-gTzPCTK8lMrA_hkL3Foa0;
 </script></body></html>
